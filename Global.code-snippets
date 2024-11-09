@@ -1,0 +1,78 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Better HTML boilerplate": {
+		"scope": "html",
+		"prefix": "!!",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"en-US\">",
+			"<head>",
+			"	<meta charset=\"UTF-8\">",
+			"	<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">"
+			"	<link rel=\"stylesheet\" href=\"/style.css\">"
+			"	<script src=\"./script.js\"></script>"
+			"	<title>Document</title>",
+			"</head>",
+			"<body>",
+			"",
+			"</body>",
+			"</html>"
+		]
+	},
+	"Outline element": {
+		"scope": "css",
+		"prefix": "b1b",
+		"body": "border: 1px solid #000000;",
+	},
+	"RAM CSS Grid": {
+		"scope": "css",
+		"prefix": "ram",
+		"body": "grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));"
+	},
+	"GitIgnore": {
+		"prefix": "giti",
+		"body": [
+			"# Logs",
+			"logs",
+			"*.log",
+			"npm-debug.log*",
+			"yarn-debug.log*",
+			"yarn-error.log*",
+			"pnpm-debug.log*",
+			"lerna-debug.log*",
+			"",
+			"node_modules",
+			"dist",
+			"dist-ssr",
+			"# Might not need to remove package-lock.json due to small-ish size",
+			"# package-lock.json",
+			"*.local",
+			"",
+			"# Editor directories and files",
+			".vscode/*",
+			"!.vscode/extensions.json",
+			".idea",
+			".DS_Store",
+			"*.suo",
+			"*.ntvs*",
+			"*.njsproj",
+			"*.sln",
+			"*.sw?",
+		]
+	}
+}
