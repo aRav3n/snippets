@@ -130,7 +130,7 @@
 			".withMessage('Error with last name')",
 			".isLength({ min: 1, max: 10 })",
 			".withMessage('Error with first last length'),",
-			"body('emaiil').trim().isEmail().withMessage('Error with email'),",
+			"body('email').trim().isEmail().withMessage('Error with email'),",
 			"];",
 			"",
 			"exports.indexActionGet = (req, res) => {",
