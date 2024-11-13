@@ -238,7 +238,7 @@
 		],
 		"description": "Express Database Pool"
 	},
-	"Express Database Query": {
+	"Express Database Queries": {
 		"prefix": "exdbquery",
 		"body": [
 			"const pool = require(\"./pool\");",
