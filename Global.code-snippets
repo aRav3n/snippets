@@ -280,5 +280,10 @@
 			""
 		],
 		"description": "Express Database Query"
-	}
+	},
+	"Console.Log": {
+		"scope": "javascript",
+		"prefix": "col",
+		"body": "console.log($1)"
+	},
 }
