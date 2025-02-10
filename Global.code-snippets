@@ -109,21 +109,21 @@
 		"description": "Express EJS App"
 	},
 	"Express Router": {
-  "prefix": "exrouter",
-  "body": [
-    "const { Router } = require(\"express\");",
-    "const controller = require(\"../controllers/controller\");",
-    "const router = Router();",
-    "",
-    "router.get(\"/\", controller.indexGet);",
-    "",
-    "router.use(\"*\", controller.errorGet);",
-    "",
-    "module.exports = router;",
-    ""
-  ],
-  "description": "Express Router"
-},
+		"prefix": "exrouter",
+		"body": [
+			"const { Router } = require(\"express\");",
+			"const controller = require(\"../controllers/controller\");",
+			"const router = Router();",
+			"",
+			"router.get(\"/\", controller.indexGet);",
+			"",
+			"router.use(\"*\", controller.errorGet);",
+			"",
+			"module.exports = router;",
+			""
+		],
+		"description": "Express Router"
+	},
 	"Express Controller": {
 		"prefix": "excontroller",
 		"body": [
@@ -353,18 +353,35 @@
 		"description": "Express Database Query"
 	},
 	"EJS HTML": {
-  "prefix": "!ejs",
-  "body": [
-    "<%- include(\"partials/head\") %>",
-    "<body>",
-    "  <%- include(\"partials/header\") %>",
-    "",
-    "  <%- include(\"partials/footer\") %>",
-    "</body>",
-    "</html>"
-  ],
-  "description": "EJS HTML"
-},
+		"prefix": "!ejs",
+		"body": [
+			"<%- include(\"partials/head\") %>",
+			"<body>",
+			"  <%- include(\"partials/header\") %>",
+			"",
+			"  <%- include(\"partials/footer\") %>",
+			"</body>",
+			"</html>"
+		],
+		"description": "EJS HTML"
+	},
+	"EJS Errors": {
+		"prefix": "!ejserrors",
+		"body": [
+			"<% if (locals.errors) { %>",
+			"  <div class=\"errors\">",
+			"    <h2>Please fix the following errors and sign up again:</h2>",
+			"    <ul>",
+			"      <% errors.forEach((error) => { %>",
+			"      <li><%= error.msg %></li>",
+			"      <% }); %>",
+			"    </ul>",
+			"  </div>",
+			"<% } %>",
+			""
+		],
+		"description": "EJS Errors"
+	},
 	"Express PassportConfig": {
 		"prefix": "expassconfig",
 		"body": [
