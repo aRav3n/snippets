@@ -109,19 +109,21 @@
 		"description": "Express EJS App"
 	},
 	"Express Router": {
-		"prefix": "exrouter",
-		"body": [
-			"const { Router } = require(\"express\");",
-			"const controller = require(\"../controllers/controller\");",
-			"const router = Router();",
-			"",
-			"router.get(\"/\", controller.indexGet);",
-			"",
-			"module.exports = router;",
-			""
-		],
-		"description": "Express Router"
-	},
+  "prefix": "exrouter",
+  "body": [
+    "const { Router } = require(\"express\");",
+    "const controller = require(\"../controllers/controller\");",
+    "const router = Router();",
+    "",
+    "router.get(\"/\", controller.indexGet);",
+    "",
+    "router.use(\"*\", controller.errorGet);",
+    "",
+    "module.exports = router;",
+    ""
+  ],
+  "description": "Express Router"
+},
 	"Express Controller": {
 		"prefix": "excontroller",
 		"body": [
@@ -351,16 +353,18 @@
 		"description": "Express Database Query"
 	},
 	"EJS HTML": {
-		"prefix": "!ejs",
-		"body": [
-			"<%- include(\"partials/head\") %>",
-			"<body>",
-			"",
-			"</body>",
-			"</html>"
-		],
-		"description": "EJS HTML"
-	},
+  "prefix": "!ejs",
+  "body": [
+    "<%- include(\"partials/head\") %>",
+    "<body>",
+    "  <%- include(\"partials/header\") %>",
+    "",
+    "  <%- include(\"partials/footer\") %>",
+    "</body>",
+    "</html>"
+  ],
+  "description": "EJS HTML"
+},
 	"Express PassportConfig": {
 		"prefix": "expassconfig",
 		"body": [
