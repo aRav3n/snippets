@@ -2,23 +2,23 @@
 	// language identifiers: https://code.visualstudio.com/docs/languages/identifiers
 	// cd ~/Library/Application\ Support/Code/User/snippets
 	"Better HTML boilerplate": {
-		"scope": "html",
 		"prefix": "!!",
 		"body": [
 			"<!DOCTYPE html>",
 			"<html lang=\"en-US\">",
 			"<head>",
-			"	<meta charset=\"UTF-8\">",
-			"	<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">"
-			"	<link rel=\"stylesheet\" href=\"/style.css\">"
-			"	<script src=\"./script.js\"></script>"
-			"	<title>Document</title>",
+			"  <meta charset=\"UTF-8\">",
+			"  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+			"  <link rel=\"stylesheet\" href=\"/style.css\">",
+			"  <script src=\"./script.js\"></script>",
+			"  <title>Document</title>",
 			"</head>",
 			"<body>",
 			"",
 			"</body>",
 			"</html>"
-		]
+		],
+		"description": "Better HTML boilerplate"
 	},
 	"Copyright HTML": {
 		"prefix": "copyright",
@@ -38,41 +38,41 @@
 		"body": "grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));"
 	},
 	"GitIgnore": {
-  "prefix": "gitignore",
-  "body": [
-    "# Logs",
-    "logs",
-    "*.log",
-    "npm-debug.log*",
-    "yarn-debug.log*",
-    "yarn-error.log*",
-    "pnpm-debug.log*",
-    "lerna-debug.log*",
-    "",
-    "node_modules",
-    ".env",
-    "dist",
-    "dist-ssr",
-    "# Might not need to remove package-lock.json due to small-ish size",
-    "# package-lock.json",
-    "*.local",
-    "",
-    "# Editor directories and files",
-    ".vscode/*",
-    "!.vscode/extensions.json",
-    ".idea",
-    ".DS_Store",
-    "*.suo",
-    "*.ntvs*",
-    "*.njsproj",
-    "*.sln",
-    "*.sw?",
-    "",
-    "# contents of uploads folder for nodeJS projects",
-    "uploads/*"
-  ],
-  "description": "GitIgnore"
-},
+		"prefix": "gitignore",
+		"body": [
+			"# Logs",
+			"logs",
+			"*.log",
+			"npm-debug.log*",
+			"yarn-debug.log*",
+			"yarn-error.log*",
+			"pnpm-debug.log*",
+			"lerna-debug.log*",
+			"",
+			"node_modules",
+			".env",
+			"dist",
+			"dist-ssr",
+			"# Might not need to remove package-lock.json due to small-ish size",
+			"# package-lock.json",
+			"*.local",
+			"",
+			"# Editor directories and files",
+			".vscode/*",
+			"!.vscode/extensions.json",
+			".idea",
+			".DS_Store",
+			"*.suo",
+			"*.ntvs*",
+			"*.njsproj",
+			"*.sln",
+			"*.sw?",
+			"",
+			"# contents of uploads folder for nodeJS projects",
+			"uploads/*"
+		],
+		"description": "GitIgnore"
+	},
 	"Express EJS App": {
 		"prefix": "exapp",
 		"body": [
