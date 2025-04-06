@@ -572,4 +572,14 @@
 		],
 		"description": "Prisma Queries"
 	},
+	"Express package.json Scripts": {
+		"prefix": "expackjs",
+		"body": [
+			"\"scripts\": {",
+			"    \"dev\": \"NODE_ENV=development && node --watch app.js\",",
+			"    \"test\": \"NODE_ENV=test && jest --watchAll\"",
+			"  }"
+		],
+		"description": "Express package.json Scripts"
+	}
 }
